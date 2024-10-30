@@ -36,7 +36,7 @@ A key feature of this work is the use of a large replay buffer of 300,000 experi
     <td>After Episode 12500:</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/jexela/jexela-SuperMarioReinforcementLearning/raw/main/Dueling Level11Data/mario_episode.gif" width="250" /></td>
+    <td><img src="https://github.com/jexela/jexela-SuperMarioReinforcementLearning/raw/main/Dueling Level14Data/mario_episode.gif" width="250" /></td>
   </tr>
 </table>
 
