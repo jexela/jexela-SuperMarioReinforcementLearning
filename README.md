@@ -23,7 +23,7 @@ A key feature of this work is the use of a large replay buffer of 300,000 experi
     <td>After Episode 13500:</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/jexela/SuperMarioReinforcementLearning/raw/main/Double_Level11/mario_episode_doubledqn_4000_11.gif" width="250" /></td>
+    <td><img src="https://github.com/jexela/jexela-SuperMarioReinforcementLearning/raw/main/Double_Level11/mario_episode_doubledqn_4000_11.gif" width="250" /></td>
     <td><img src="https://github.com/jexela/SuperMarioReinforcementLearning/raw/main/Double_Level11/mario_episode_doubledqn_8000_11.gif" width="250" /></td>
     <td><img src="https://github.com/jexela/SuperMarioReinforcementLearning/raw/main/Double_Level11/mario_episode_doubledqn_13500_11.gif" width="250" /></td>
   </tr>
