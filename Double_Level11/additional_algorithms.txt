@@ -1,0 +1,70 @@
+WITH Blocked_Episodes AS (
+    SELECT 
+        Episode,
+        Total_Reward,
+        FLOOR(Episode / 500) AS Block
+    FROM 
+        mario_data_ddqn_11
+),
+Success_Per_Block AS (
+    SELECT 
+        Block,
+        COUNT(CASE WHEN Total_Reward >= 3050 THEN 1 END) AS Successful_Episodes,
+        COUNT(*) AS Total_Episodes,
+        COUNT(CASE WHEN Total_Reward >= 3050 THEN 1 END) * 100.0 / COUNT(*) AS Success_Rate
+    FROM 
+        Blocked_Episodes
+    GROUP BY 
+        Block
+)
+SELECT 
+    Block * 500 AS Block_Start_Episode, 
+    Block * 500 + 499 AS Block_End_Episode,
+    Successful_Episodes, 
+    Total_Episodes, 
+    Success_Rate
+FROM 
+    Success_Per_Block
+ORDER BY 
+    Block;
+
+
+
+
+
+
+WITH episode_streaks AS (
+    SELECT
+        Episode,
+        Total_Reward,
+        CASE 
+            WHEN Total_Reward > 3040 THEN 1 
+            ELSE 0 
+        END AS reward_over_3000,
+        ROW_NUMBER() OVER (ORDER BY Episode) -
+        ROW_NUMBER() OVER (PARTITION BY CASE WHEN Total_Reward > 3040 THEN 1 ELSE 0 END ORDER BY Episode) AS streak_identifier
+    FROM
+        mario_data_ddqn_11
+),
+streak_summary AS (
+    SELECT
+        MIN(Episode) AS episode_start,
+        MAX(Episode) AS episode_end,
+        COUNT(*) AS streak_length,
+        STRING_AGG(Total_Reward::TEXT, ',') AS total_reward_array
+    FROM
+        episode_streaks
+    WHERE
+        reward_over_3000 = 1
+    GROUP BY
+        streak_identifier
+)
+SELECT 
+    episode_start AS "Episode Start",
+    episode_end AS "Episode End",
+    streak_length AS "Streak Length",
+    total_reward_array AS "Total Reward Array"
+FROM
+    streak_summary
+ORDER BY
+    streak_length DESC;
