@@ -36,7 +36,7 @@ A key feature of this work is the use of a large replay buffer of 300,000 experi
     <td>After Episode 12500:</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/jexela/SuperMarioReinforcementLearning/raw/main/trainingDueling_Level11/mario_episode.gif" width="250" /></td>
+    <td><img src="https://github.com/jexela/jexela-SuperMarioReinforcementLearning/raw/main/Dueling Level11Data/mario_episode.gif" width="250" /></td>
   </tr>
 </table>
 
@@ -49,9 +49,9 @@ A key feature of this work is the use of a large replay buffer of 300,000 experi
     <td>After Episode 29500:</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/jexela/SuperMarioReinforcementLearning/raw/main/trainingDouble_Level14/mario_episode_doubledqn_26500_14_success.gif" width="250" /></td>
-    <td><img src="https://github.com/jexela/SuperMarioReinforcementLearning/raw/main/trainingDouble_Level14/mario_episode_doubledqn_28500_14_success.gif" width="250" /></td>
-    <td><img src="https://github.com/jexela/SuperMarioReinforcementLearning/raw/main/trainingDouble_Level14/mario_episode_doubledqn_29500_14.gif" width="250" /></td>
+    <td><img src="https://github.com/jexela/jexela-SuperMarioReinforcementLearning/raw/main/Double Level14Data/mario_episode_doubledqn_26500_14_success.gif" width="250" /></td>
+    <td><img src="https://github.com/jexela/jexela-SuperMarioReinforcementLearning/raw/main/Double Level14Data/mario_episode_doubledqn_28500_14_success.gif" width="250" /></td>
+    <td><img src="https://github.com/jexela/jexela-SuperMarioReinforcementLearning/raw/main/Double Level14Data/mario_episode_doubledqn_29500_14.gif" width="250" /></td>
   </tr>
 </table>
 
@@ -65,10 +65,10 @@ A key feature of this work is the use of a large replay buffer of 300,000 experi
     <td>After Episode 40000:</td>
   </tr>
   <tr>
-    <td><img src="https://github.com/jexela/SuperMarioReinforcementLearning/raw/main/trainingDueling_Level14/mario_episode_duelingdqn_20000_14.gif" width="250" /></td>
-    <td><img src="https://github.com/jexela/SuperMarioReinforcementLearning/raw/main/trainingDueling_Level14/mario_episode_duelingdqn_26000_14.gif" width="250" /></td>
-    <td><img src="https://github.com/jexela/SuperMarioReinforcementLearning/raw/main/trainingDueling_Level14/mario_episode_duelingdqn_33500_14.gif" width="250" /></td>
-    <td><img src="https://github.com/jexela/SuperMarioReinforcementLearning/raw/main/trainingDueling_Level14/mario_episode_duelingdqn_40000_14.gif" width="250" /></td>
+    <td><img src="https://github.com/jexela/jexela-SuperMarioReinforcementLearning/raw/main/Dueling Level14Data/mario_episode_duelingdqn_20000_14.gif" width="250" /></td>
+    <td><img src="https://github.com/jexela/jexela-SuperMarioReinforcementLearning/raw/main/Dueling Level14Data/mario_episode_duelingdqn_26000_14.gif" width="250" /></td>
+    <td><img src="https://github.com/jexela/jexela-SuperMarioReinforcementLearning/raw/main/Dueling Level14Data/mario_episode_duelingdqn_33500_14.gif" width="250" /></td>
+    <td><img src="https://github.com/jexela/jexela-SuperMarioReinforcementLearning/raw/main/Dueling Level14Data/mario_episode_duelingdqn_40000_14.gif" width="250" /></td>
   </tr>
 </table>
 
